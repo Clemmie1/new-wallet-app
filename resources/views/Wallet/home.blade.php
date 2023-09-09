@@ -206,6 +206,22 @@
                         </div>
                     </div>
                 </section>
+
+                <section class="card border-0 py-1 p-md-2 p-xl-3 p-xxl-4">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center pb-4 mt-sm-n1 mb-0 mb-lg-1 mb-xl-3">
+                            <i class="ai-key text-primary lead pe-1 me-2"></i>
+                            <h2 class="h4 mb-0">Auth API</h2>
+                            <livewire:wallet.create-new-api>
+
+                            </livewire:wallet.create-new-api>
+                        </div>
+
+                        @livewire('wallet.load-my-api')
+
+                        <!-- Add address-->
+                    </div>
+                </section>
                 <!-- Billing address-->
 
             </div>
@@ -220,6 +236,7 @@
         <circle cx="20" cy="20" r="19" fill="none" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"></circle>
     </svg><i class="ai-arrow-up"></i></a>
 <!-- Vendor scripts: js libraries and plugins-->
+
 @livewireScripts
 <script src="{{asset('assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js')}}"></script>
 <script src="{{asset('assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js')}}}"></script>
@@ -227,6 +244,7 @@
 <!-- Main theme script-->
 <script src="{{asset('assets/js/theme.min.js')}}"></script>
 <!-- Customizer-->
+
 
 </body>
 </html>

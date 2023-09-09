@@ -15,10 +15,11 @@
                     <div class="fs-sm dropdown-toggle">{{\Illuminate\Support\Facades\Auth::user()->first_name}}</div>
                 </div></a>
             <div class="dropdown-menu dropdown-menu-end my-1">
+                <h6 class="dropdown-header fs-xs fw-medium text-muted text-uppercase pb-1">+{{\Illuminate\Support\Facades\Auth::user()->phone}}</h6>
                 <a class="dropdown-item" href="{{route('wallet.home')}}"><i class="ai-dollar fs-lg opacity-70 me-2"></i>Мой банк</a>
                 <a class="dropdown-item" href="{{route('wallet.transfer')}}"><i class="ai-send fs-lg opacity-70 me-2"></i>Переводы</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" onclick="location.href='{{route('auth.logout')}}'"><i class="ai-logout fs-lg opacity-70 me-2"></i>Выйти</a>
+                <a href="" class="dropdown-item" onclick="location.href='{{route('auth.logout')}}'"><i class="ai-logout fs-lg opacity-70 me-2"></i>Выйти</a>
             </div>
         </div>
         <button class="navbar-toggler ms-sm-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
@@ -32,9 +33,10 @@
                             <div class="fs-sm dropdown-toggle">{{\Illuminate\Support\Facades\Auth::user()->first_name}}</div>
                         </div></a>
                     <div class="dropdown-menu">
+                        <h6 class="dropdown-header fs-xs fw-medium text-muted text-uppercase pb-1">+{{\Illuminate\Support\Facades\Auth::user()->phone}}</h6>
                         <a class="dropdown-item" href="{{route('wallet.home')}}"><i class="ai-dollar fs-lg opacity-70 me-2"></i>Мой банк</a>
                         <a class="dropdown-item" href="{{route('wallet.transfer')}}"><i class="ai-send fs-lg opacity-70 me-2"></i>Переводы</a>
-                        <div class="dropdown-divider"></div><a class="dropdown-item" onclick="location.href='{{route('auth.logout')}}'"><i class="ai-logout fs-lg opacity-70 me-2"></i>Выйти</a>
+                        <div class="dropdown-divider"></div><a href="" class="dropdown-item" onclick="location.href='{{route('auth.logout')}}'"><i class="ai-logout fs-lg opacity-70 me-2"></i>Выйти</a>
                     </div>
                 </li>
             </ul>

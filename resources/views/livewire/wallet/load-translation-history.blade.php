@@ -49,7 +49,7 @@
                                     {{$list->comment}}
                                 @endif
                             </td>
-                            <td>{{$list->created_at->format('d.m.Y h:i')}}</td>
+                            <td data-bs-toggle="tooltip" data-bs-placement="top" title="{{$list->created_at->format('d.m.Y h:i')}}">{{\App\Http\Controllers\TimeController::getTime($list->created_at)}}</td>
                         </tr>
                         </tbody>
                     @endforeach
